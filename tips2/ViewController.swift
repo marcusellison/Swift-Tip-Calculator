@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {	
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -159,10 +159,12 @@ class ViewController: UIViewController {
             if resetTime.compare(currentTime) == NSComparisonResult.OrderedAscending {
                 billField.text = ""
             } else {
+                var billAmount = lastAmount
+                
                 formatter.numberStyle = .CurrencyStyle
                 formatter.stringFromNumber(lastAmount)
                 
-                billField.text = formatter.stringFromNumber(lastAmount)
+                billField.text = formatter.stringFromNumber(billAmount)
                 
                 adjustTipLabels(Double(lastAmount), tipPercentage: tipPercentage, tipLabels: tipLabels)
                 displayTotal(Double(lastAmount), tipPercentage: tipPercentage)
