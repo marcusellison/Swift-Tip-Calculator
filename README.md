@@ -7,11 +7,13 @@ Time spent: 7 hours spent in total
 
 Completed user stories:
 
- Required: Follow through walkthrough
- Required: Adding settings page to set defeault tip percentages
- Optional: View animations
- Optional: Remember the bill amount across app restarts.
- Optional: Use locale specific currency and currency thousands separators.
- Optional: Add a light/dark color theme to the settings view.
+ - Required: Follow through walkthrough
+ - Required: Adding settings page to set defeault tip percentages
+ - Optional: View animations
+ - Optional: Remember the bill amount across app restarts.
+ - Optional: Use locale specific currency and currency thousands separators.
+ - Optional: Add a light/dark color theme to the settings view.
 
 Walkthrough of all user stories:
+
+![Alt text](/gif/tip-calculator-gif.gif?raw=true "Optional Title")
